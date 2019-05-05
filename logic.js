@@ -106,3 +106,14 @@ function isEndOfRound(thisRound) {
         return false;
     }
 }
+
+//setupGame function
+function setupGame(randomWords, numWins, numLosses) {
+    var game = {
+        words: randomWords,
+        wins: numWins,
+        losses: numLosses,
+        round: setupRound(randomWord(randomWords))
+    }
+    return game;
+}
