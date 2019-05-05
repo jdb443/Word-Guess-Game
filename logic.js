@@ -28,3 +28,10 @@ function isCorrectGuess(word, letter) {
     }
 }
 
+function getBlanks(word) {
+    var blanksArray = [];
+    for (var i = 0; i < word.length; i++) {
+        blanksArray.push("_");
+    }
+    return blanksArray;
+}
