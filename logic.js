@@ -84,3 +84,25 @@ function hasWon(puzzleState) {
     return true;
 }
 
+//hasLost function
+function hasLost(guessesLeft) {
+    if (guessesLeft === 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+//isEndOfRound function
+function isEndOfRound(thisRound) {
+    if (hasLost(thisRound.guessesLeft)) {
+        return true;
+    }
+    else if (hasWon(thisRound.puzzleState)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
