@@ -73,3 +73,14 @@ function updateRound(thisRound, letterGuessed) {
         thisRound.guessesLeft--;
     }
 }
+
+//hasWon function
+function hasWon(puzzleState) {
+    for (var i = 0; i < puzzleState.length; i++) {
+        if (puzzleState[i] === "_") {
+            return false;
+        }
+    }
+    return true;
+}
+
