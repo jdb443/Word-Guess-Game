@@ -50,6 +50,7 @@ function fillBlanks(word, puzzleState, letter) {
     return puzzleState;
 }
 
+//setupRound function
 function setupRound(word) {
     var newRound = {
         word: word,
@@ -57,5 +58,18 @@ function setupRound(word) {
         wrongGuesses: [],
         puzzleState: getBlanks(word)
     }
+    //return object
     return newRound;
+}
+
+//updateRound function
+function updateRound(thisRound, letterGuessed) {
+    if (isCorrectGuess(thisRound.word, letterGuessed)) {
+        thisRound.puzzleState = fillBlanks(thisRound.word, thisRound.puzzleState, letterGuessed);
+    }
+    else {
+        console.log("wrong guess");
+        thisRound.wrongGuesses.push(letterGuessed);
+        thisRound.guessesLeft--;
+    }
 }
