@@ -35,3 +35,13 @@ function getBlanks(word) {
     }
     return blanksArray;
 }
+
+function fillBlanks(word, puzzleState, letter) {
+    for (var i = 0; i < word.length; i++) {
+        if (word.charAt(i) === letter) {
+            puzzleState[i] = letter;
+        }
+    }
+    return puzzleState;
+}
+
