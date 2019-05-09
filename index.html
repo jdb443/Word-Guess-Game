@@ -7,20 +7,47 @@
     <title>Jonathan Behar - Word Guess Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel ="stylesheet" type ="text/css" href ="style.css"/>
+    <!-- <script type="text/javascript" src="logic.js"></script> -->
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12" id="instructionsBox">
-                <h1><span id="puzzle-state"></span></h1>
-                <h1>Wrong Guesses: <span id="wrong-guesses"></span></h1>
-                <h1>Guesses Left: <span id="guesses-left"></span></h1>
-                <h1>Wins: <span id="win-counter"></span></h1>
-                <h1>Losses: <span id="loss-counter"></span></h1>
+        <h1 class="threeD">#</h1>
+        <h2>Word Game</h2>
+        <h3>Press any key to get started</h3>
+
+
+    
+
+        <div class="row gameRow" id="puzzleRow">
+            <div class="col-md-12">
+                <h4 id="puzzle-state"></h4>
             </div>
         </div>
 
 
+        <div class="row gameRow">
+            <div class="col-md-12">
+                <span class="throne">Wrong Guesses: </span> <span id="wrong-guesses" class="hodorLetter"></span>
+            </div>
+        </div>
+
+        <div class="row gameRow">
+            <div class="col-md-12">
+                <span class="throne">Wrong Guesses Left: </span> <span id="guesses-left" class="hodor">9</span>
+            </div>
+        </div>
+
+        <div class="row gameRow">
+            <div class="col-md-12">
+                <span class="throne">Wins: </span> <span id="win-counter" class="hodor">0</span>
+            </div>
+        </div>
+
+        <div class="row gameRow">
+            <div class="col-md-12">
+                <span class="throne">Losses: </span> <span id="loss-counter" class="hodor">0</span>
+            </div>
+        </div>
     </div>
 
 
