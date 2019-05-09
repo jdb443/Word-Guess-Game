@@ -120,43 +120,6 @@ function setupGame(randomWords, numWins, numLosses) {
     return game;
 }
 
-// function startNewRound(game) {
-    
-//     if (hasLost(game.round.guessesLeft)) {
-//         game.losses++;
-//         modelText.innerHTML = "You have lost! The characters name was: " + game.round.word;
-//         $("#alert-modal").modal("show");
-
-//     }
-//     else if (hasWon(game.round.puzzleState)) {
-//         game.wins++;
-//         modelText.innerHTML = "You have won! The characters name was: " + game.round.word;
-//         $("#alert-modal").modal("show");
-//     }
-
-//     game.round = setupRound(randomWord(game.words));
-    
-// }
-
- 
-
-
-// function startNewRound(game) {
-//     var puzzleState = game.round.puzzleState;
-//     if (game.round.puzzleState.indexOf("_") == -1 && game.round.guessesLeft > 0) {
-//         alert("winner " + game.round.word + "!");
-//         game.wins++;
-//         //console.log("win game");
-//         return true;
-//     }
-//     else if (game.puzzleState.indexOf("_") > -1 && game.round.guessesLeft == 0) {
-//         alert("lose" + game.round.word);
-//         game.losses++;
-//         //console.log("lose game");
-//         return false;
-//     }
-// }
-
 function startNewRound(game) {
     var puzzleState = game.round.puzzleState;
     if (hasWon(puzzleState) === true) {
@@ -216,47 +179,6 @@ document.addEventListener( 'keydown', function(e){
 
 });
 
-// var keyPressed;
-// document.onkeyup = function (evt) {
-//     keyPressed = evt.key.toLowerCase() 
-//     console.log("The " + keyPressed + " key was pressed");
-
-//     // CALL BACK LOGIC
-//     isCorrectGuess(myGame.round.word, keyPressed);
-//     fillBlanks(myGame.round.word, myGame.round.puzzleState, keyPressed);
-//     updateRound(myGame.round, keyPressed);
-//     hasWon(myGame.round.puzzleState);
-//     hasLost(myGame.round.guessesLeft);
-
-//     // CHECKS IF GUESSES ARE LEFT OR HAS WON
-//     if (isEndOfRound(myGame.round)){
-//         myGame = startNewRound(myGame);
-//         myGame.round = setupRound(randomWord(gameWords));
-//     }
-//     // --------- end CALL BACK THE LOGIC
-
-//     // Uses the ramdom word and displays the empty blanks
-//     document.getElementById("puzzle-state").innerText = myGame.round.puzzleState.join(" ");
-
-//     // Displays the updated object for wrong guesses from user
-//     document.getElementById("wrong-guesses").innerText = myGame.round.wrongGuesses;
-
-//     // Displays the updated object for total wins
-//     document.getElementById("win-counter").innerText = myGame.wins;
-
-//     // Displays the updated object for total losses
-//     document.getElementById("loss-counter").innerText = myGame.losses;
-
-//     // Displays the updated object for number of guesses left
-//     document.getElementById("guesses-left").innerText = myGame.round.guessesLeft;
-
-//     console.log(myGame);
-
-// } // ------------ end of onclick event
-
-
-
-
 // RESET GAME
 function gameReset() {
     setupRound(myGame.words)
@@ -266,6 +188,5 @@ function gameReset() {
     randomWord(myGame.words);
     isEndOfRound(myGame.round);
     hasLost(myGame.round.guessesLeft);
-} // ------------ end of button click
-
+}
 
