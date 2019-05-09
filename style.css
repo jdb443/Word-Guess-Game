@@ -55,11 +55,38 @@ h1.threeD {
 }
 
 
+.of {
+    font-size: 2vw;
+    display: inline;
+    padding-bottom: 10px;
+    vertical-align: 15%;
+}
 
 h2 {
-    font-family: 'hodorregular';
+    font-family: 'game_of_thronesregular';
     font-size: 3vw;
     color: #ffffff;
+}
+
+h2.threeD {
+	font-size: 3vw;
+	font-weight: normal;
+	text-align: center;
+	margin: .5em 0 .5em 0;
+	color: #ffffff;
+	text-shadow:
+		-1px 1px 0 #ddd,
+		-2px 2px 0 #c8c8c8,
+		-3px 3px 0 #ccc,
+		-4px 4px 0 #b8b8b8,
+		-4px 4px 0 #bbb,
+		0px 1px 1px rgba(0,0,0,.4),
+		0px 2px 2px rgba(0,0,0,.3),
+		-1px 3px 3px rgba(0,0,0,.2),
+		-1px 5px 5px rgba(0,0,0,.1),
+		-2px 8px 8px rgba(0,0,0,.1),
+		-2px 13px 13px rgba(0,0,0,.1)
+		;
 }
 
 h3 {
