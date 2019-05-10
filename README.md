@@ -1,12 +1,15 @@
 # Word Guess Game (Browser)
 
-<!-- TODO: add one sentence overview here of your progress -->
+Game of Thrones themed word guess game!
 
 ## Overview
 
 <!-- TODO: add a description of your assignment, theme, approach, and solution here -->
+Build a word guess game! Build a word guess game that allows users to experience Game of Thrones minus the Red Wedding do you have what it takes to sit on the Iron Throne. Test out your Game of Thrones Knowledge!
+
 
 ## Functionality Breakdown
-<!-- TODO: update this to your screenshot, gif, etc. demonstrating functionality. add any additional explanation below -->
-[Screenshot of Game](images/screenshot1.png)
+
+Sample of Game play!
+<img src="assets/Game_of_Thrones_GIF_low.gif">
 
