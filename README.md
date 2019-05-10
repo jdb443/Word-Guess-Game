@@ -10,6 +10,7 @@ Build a word guess game! Build a word guess game that allows users to experience
 
 ## Functionality Breakdown
 
-Sample of Game play!
+Sample of Game play! <br/>
+
 <img src="assets/Game_of_Thrones_Game_GIF_low.gif">
 
